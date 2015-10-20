@@ -32,15 +32,15 @@ _by Mei Ting Ieong_
 8. Type git config --global user.email your_email.
 9. You're done now and you will not have to do this unless you create a new repo.
 
-###Please read this!!!!  
-*  HTTPS stands for Hypertext Transfer Protocol Secure and if you are using this, you would have to sign up for your username and email everytime you login. 
-*  SSH stands for Secure Socket Layer and if you're using SSH, then you will only ask to sign in once and the computer will remember you as long as you're using the same repo.
-*  The git config --global user.name and email are important because that is how you get the credit for wrting the code.  
+##_Please read this!!!!_  
+* HTTPS stands for Hypertext Transfer Protocol Secure and if you are using this, you would have to sign up for your username and email everytime you login. 
+*  SSH stands for Secure Socket Layer and if you're using SSH, then you will only ask to sign in once and the computer will remember you as long as you're using the same repo.  
+*  The git config --global user.name and email are important because that is how you get the credit for wrting the code.    
 
 
 ---
 ## Repository Setup
-
+1. 
 
 
 ---
