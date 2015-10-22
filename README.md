@@ -105,7 +105,7 @@ Forking is different from cloning because forking is making a copy of someone el
 * Now you just see your name on the URL so copy the URL  
 * Type `git clone URL`  
 
-* _what happen if you want to make suggestion to that person?_  
+* _what happen if you want to make a suggestion to that person?_  
 ANS: Pull requests!
 
 * Go to remote repo, click the green botton next to branch: master  
