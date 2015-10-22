@@ -77,9 +77,38 @@ _edit file(s)_
 * git commit -m "some message"→ write a short and specific message in present tense  
 _repeat_  
 
-**Push and Pull**  
+**Push**  
 
 * In IDE, type `git remote add origin URL`  
-* remote→setup a connection between our local repo and the external repo in github
-* add→ adding the remote repository 
-* origin→ origin is just a nickname for the repoll
+* remote→setup a connection between our local repo and the external repo in github  
+* add→ adding the remote repository   
+* origin→ origin is just a nickname for the repo and origin is the standard one  
+* URL→ the location of the remote repo(can be SSH or HTTPS)  
+* Type `git push -u origin master`   
+* push→ sending commits from local repo to remote repo(github)  
+* -u→ stands for "upstream" and it remembers which remote repo you want to push so you don't have to write the entire code again in the future  
+* origin→ the remote you're pushing to  
+* URL- the main branch of the project  
+ **This is a one-step setup so you just need to type `git push` in the future as long as you're using the same local repo**
+
+**Clone**  
+By cloning the file, you're making a copy of your code from the remote repo to your local repo.  
+
+* Go to github and open your repo  
+* Go to the right sidebar and copy the URL  
+* In IDE, type `git clone URL` and you will find that your repo is back.  
+
+**Forking**  
+Forking is different from cloning because forking is making a copy of someone else's repository to your remote repository and then to your local repo. However, you're only making a copy of your remote repo to your local repo for cloning. Therefore, you cannot make any changes on someone else's project with cloning.
+
+* Go to the repository of the person that you want to fork and click the fork botton  
+* Now you just see your name on the URL so copy the URL  
+* Type `git clone URL`   
+
+
+ _what happen if you want to make suggestion to that person?_  
+
+
+
+
+
