@@ -114,5 +114,9 @@ ANS: Pull requests!
 * If they accepted your suggestion, they would `git pull` the code to his/her local repo.  
 
 
+## Extra Commands
+* Type `rm -rf your-repo-name` to remove the repo completely from the IDE.
+* `git log` for past commits
+
 
 
