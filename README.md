@@ -63,7 +63,7 @@ _by Mei Ting Ieong_
 5. refresh the github page and you should see the changes that you made.  
 
 _You use `touch` for word documents_  
-_when you commit something, you're taking a picture of all the files on the stage_
+_when you commit something, you're taking a picture of all the files on the stage_  
 _Commit often so you can look back at the changes you made!!!_
  
 ---
