@@ -107,7 +107,11 @@ Forking is different from cloning because forking is making a copy of someone el
 
 
  _what happen if you want to make suggestion to that person?_  
+ANS: Pull requests!
 
+* Go to remote repo, click the green botton next to branch: master  
+* submit pull requests  
+* If they accepted your suggestion, they would `git pull` the code to his/her local repo.  
 
 
 
