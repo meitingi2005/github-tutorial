@@ -60,10 +60,26 @@ _by Mei Ting Ieong_
 3. Click create repository.  
 4. On the top of the new page, they would ask you to choose SSH or HTTPS, so pick the one you like.  
 5. There will be two boxes of code, look at the second box "push an existing repository to the command line" and copy/ paste the code to your IDE _LINE BY LINE_.  
-5. refresh the github page and you should see the changes that you made.
+5. refresh the github page and you should see the changes that you made.  
 
-
- 
+_You use `touch` for word documents_  
+_Commit often so you can look back at the changes you made!!!_
  
 ---
-## Workflow & Commands
+## Workflow & Commands  
+**Workflow of Commands**  
+
+* git init  
+_edit file(s)_
+* git status→ you can see which file that have been edited and it should be red   
+* git add file.ext  
+* git status→ you now can see which file have been added to the stage and it should be green now.  
+* git commit -m "some message"→ write a short and specific message in present tense  
+_repeat_  
+
+**Push and Pull**  
+
+* In IDE, type `git remote add origin URL`  
+* remote→setup a connection between our local repo and the external repo in github
+* add→ adding the remote repository 
+* origin→ origin is just a nickname for the repoll
