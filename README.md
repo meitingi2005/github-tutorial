@@ -22,7 +22,7 @@ _by Mei Ting Ieong_
 
 ---
 ## Initial Setup (one-time setup)
-1. Sign up for for an account in [Github](github).  
+1. Sign up for an account in [Github](github).  
 2. Create an username and password then click free account.  
 3. For the SSH key or HTTPS, go to github and click the profile icon in the top right corner.  
 4. Click settings and add the key you want (SSH or HTTPS).  
@@ -33,7 +33,7 @@ _by Mei Ting Ieong_
 9. You're done now and you will not have to do this unless you create a new repo.
 
 ####_Please read this!!!!_  
-* HTTPS stands for Hypertext Transfer Protocol Secure and if you are using this, you would have to sign up for your username and email everytime you login. 
+* HTTPS stands for Hypertext Transfer Protocol Secure and if you are using this, you would have to enter your login info everytime you log on. 
 *  SSH stands for Secure Socket Layer and if you're using SSH, then you will only ask to sign in once and the computer will remember you as long as you're using the same repo.  
 *  The `git config --global user.name` and email are important because that is how you get the credit for wrting the code.    
 
@@ -103,10 +103,9 @@ Forking is different from cloning because forking is making a copy of someone el
 
 * Go to the repository of the person that you want to fork and click the fork botton  
 * Now you just see your name on the URL so copy the URL  
-* Type `git clone URL`   
+* Type `git clone URL`  
 
-
- _what happen if you want to make suggestion to that person?_  
+* _what happen if you want to make suggestion to that person?_  
 ANS: Pull requests!
 
 * Go to remote repo, click the green botton next to branch: master  
