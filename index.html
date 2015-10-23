@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>GitHub Tutorial by meitingi2005</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/meitingi2005/github-tutorial">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>GitHub Tutorial</h1>
+            <h2>Getting started with GitHub!</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/meitingi2005/github-tutorial/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/meitingi2005/github-tutorial/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Mei Ting Ieong</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<h4>
+<a id="what-is-git" class="anchor" href="#what-is-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is Git?</h4>
+
+<ul>
+<li>Git is a version control that keeps "Snapshots" of code.<br>
+
+<ul>
+<li>Version control is like a timeline that you can see the changes you havemade in the past.<br>
+</li>
+</ul>
+</li>
+</ul>
+
+<h4>
+<a id="what-is-github" class="anchor" href="#what-is-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is GitHub?</h4>
+
+<ul>
+<li>GitHub is in the cloud (internet) where you can store your code.<br>
+</li>
+<li>GitHub visually keeps track of changes by refering back to the commit.</li>
+<li>People can collaborate on someone else's project very easily.</li>
+</ul>
+
+<h4>
+<a id="what-is-the-difference-between-git-and-github" class="anchor" href="#what-is-the-difference-between-git-and-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is the difference between Git and Github?</h4>
+
+<ul>
+<li>Git does not require github but github does require git.<br>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup-one-time-setup" class="anchor" href="#initial-setup-one-time-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup (one-time setup)</h2>
+
+<ol>
+<li>Sign up for an account in <a href="github">Github</a>.<br>
+</li>
+<li>Create an username and password then click free account.<br>
+</li>
+<li>For the SSH key or HTTPS, go to github and click the profile icon in the top right corner.<br>
+</li>
+<li>Click settings and add the key you want (SSH or HTTPS).<br>
+</li>
+<li>Switch to your IDE and find the SSH/HTTPS and copy/paste it into GitHub. Click add key.<br>
+</li>
+<li>In IDE, type <code>ssh -T git@github.com</code> or <code>https -T git@github.com</code> then type yes.<br>
+</li>
+<li>Type <code>git config --global user.name "your_name"</code>.</li>
+<li>Type <code>git config --global user.email your_email</code>.</li>
+<li>You're done now and you will not have to do this unless you create a new repo.</li>
+</ol>
+
+<h4>
+<a id="please-read-this" class="anchor" href="#please-read-this" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Please read this!!!!</em>
+</h4>
+
+<ul>
+<li>HTTPS stands for Hypertext Transfer Protocol Secure and if you are using this, you would have to enter your login info everytime you log on. </li>
+<li> SSH stands for Secure Socket Layer and if you're using SSH, then you will only ask to sign in once and the computer will remember you as long as you're using the same repo.<br>
+</li>
+<li> The <code>git config --global user.name</code> and email are important because that is how you get the credit for wrting the code.<br>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<ul>
+<li>In order to use git in your IDE, you have to type <code>git init</code>. 
+
+<ul>
+<li>By doing so, you're telling the IDE that you want to turn on git and start making commits.</li>
+</ul>
+</li>
+</ul>
+
+<p><strong>Here are the steps to create a new repository.</strong><br>
+1. Go to IDE, type <code>mkdir first-repository</code>.<br>
+2. Type <code>cd first-repository</code> to go inside the repo.<br>
+3. <code>git init</code><br>
+4. <code>git config --global user.name "your_name"</code><br>
+5. <code>git config --global user.email "your_email"</code><br>
+** Now, we need to create a new file called README.md**<br>
+1. <code>touch README.md</code><br>
+2. open README.md and type in something like "This is my first repo"<br>
+3. save it and add it to the stage by type in <code>git add README.md</code><br>
+4. commit it by <code>git commit -m "add README.md"</code><br>
+<strong>We need to create a remote in order to push the code to Github</strong><br>
+1. go to github &gt; top right &gt; click the + sign &gt; select new repository.<br>
+2. The name for the repo needs to match the name in the IDE. So in this case. we would name it "first-repository".<br>
+3. Click create repository.<br>
+4. On the top of the new page, they would ask you to choose SSH or HTTPS, so pick the one you like.<br>
+5. There will be two boxes of code, look at the second box "push an existing repository to the command line" and copy/ paste the code to your IDE <em>LINE BY LINE</em>.<br>
+5. refresh the github page and you should see the changes that you made.  </p>
+
+<p><em>You use <code>touch</code> for word documents</em><br>
+<em>when you commit something, you're taking a picture of all the files on the stage</em><br>
+<em>Commit often so you can look back at the changes you made!!!</em></p>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p><strong>Workflow of Commands</strong>  </p>
+
+<ul>
+<li>git init<br>
+<em>edit file(s)</em>
+</li>
+<li>git status→ you can see which file that have been edited and it should be red<br>
+</li>
+<li>git add file.ext<br>
+</li>
+<li>git status→ you now can see which file have been added to the stage and it should be green now.<br>
+</li>
+<li>git commit -m "some message"→ write a short and specific message in present tense<br>
+<em>repeat</em><br>
+</li>
+</ul>
+
+<p><strong>Push</strong>  </p>
+
+<ul>
+<li>In IDE, type <code>git remote add origin URL</code><br>
+</li>
+<li>remote→setup a connection between our local repo and the external repo in github<br>
+</li>
+<li>add→ adding the remote repository<br>
+</li>
+<li>origin→ origin is just a nickname for the repo and origin is the standard one<br>
+</li>
+<li>URL→ the location of the remote repo(can be SSH or HTTPS)<br>
+</li>
+<li>Type <code>git push -u origin master</code><br>
+</li>
+<li>push→ sending commits from local repo to remote repo(github)<br>
+</li>
+<li>-u→ stands for "upstream" and it remembers which remote repo you want to push so you don't have to write the entire code again in the future<br>
+</li>
+<li>origin→ the remote you're pushing to<br>
+</li>
+<li>URL- the main branch of the project<br>
+<strong>This is a one-step setup so you just need to type <code>git push</code> in the future as long as you're using the same local repo</strong>
+</li>
+</ul>
+
+<p><strong>Clone</strong><br>
+By cloning the file, you're making a copy of your code from the remote repo to your local repo.  </p>
+
+<ul>
+<li>Go to github and open your repo<br>
+</li>
+<li>Go to the right sidebar and copy the URL<br>
+</li>
+<li>In IDE, type <code>git clone URL</code> and you will find that your repo is back.<br>
+</li>
+</ul>
+
+<p><strong>Forking</strong><br>
+Forking is different from cloning because forking is making a copy of someone else's repository to your remote repository and then to your local repo. However, you're only making a copy of your remote repo to your local repo for cloning. Therefore, you cannot make any changes on someone else's project with cloning.</p>
+
+<ul>
+<li>Go to the repository of the person that you want to fork and click the fork botton<br>
+</li>
+<li>Now you just see your name on the URL so copy the URL<br>
+</li>
+<li><p>Type <code>git clone URL</code>  </p></li>
+<li><p><em>what happen if you want to make a suggestion to that person?</em><br>
+ANS: Pull requests!</p></li>
+<li><p>Go to remote repo, click the green botton next to branch: master  </p></li>
+<li>submit pull requests<br>
+</li>
+<li>If they accepted your suggestion, they would <code>git pull</code> the code to his/her local repo.<br>
+</li>
+</ul>
+
+<h2>
+<a id="extra-commands" class="anchor" href="#extra-commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra Commands</h2>
+
+<ul>
+<li>Type <code>rm -rf your-repo-name</code> to remove the repo completely from the IDE.</li>
+<li>
+<code>git log</code> for past commits</li>
+</ul>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/meitingi2005">meitingi2005</a> can be found on <a href="https://github.com/meitingi2005/github-tutorial">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
